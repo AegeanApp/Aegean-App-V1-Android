@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.example.george.test_aegean_app.Sitisi">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sitisi_image">
+    </ImageView>
+
+    <Spinner
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:alpha="0.8"
+        android:foreground="#000000"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/list1"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        android:foreground="#000000"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/OkBtn"
+        android:layout_marginBottom="50px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="okOnClick" />
+
+</RelativeLayout>

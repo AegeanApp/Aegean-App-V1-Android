@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.george.test_aegean_app.deuteri_ebomaxa_mesimeri">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Δευτέρα \n1ο.Σούπα κρέσυ - Κοζανίτικο κτχι με φέτα και πράσο \n2ο.Φιλέτα γαλέου, πουρές πατάτας - Παστίτσιο \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤρίτη \n1ο.Σούπα κάρδαμο - Τονοσαλάτα \n2ο. Κοτόπουλο ψητό ,ε ζυμαρικά, τυρί φέτα - Χοιρινό λεμονάτο στο φούρνο με πατάτες \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤετάρτη \n1ο.Σούπα αλενουά - Λαχανοντολμάδες αυγολέμονο \n2ο.Φασόλια φούρνου, τυρί φέτα - Μπάμιες, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχή \n \nΠέμπτη \n1ο.Σούπα κρέμα αγκινάρας - Ντολμαδάκια αυγολέμονο \n2ο.Κοτόπουλο Σαιν Ζερμέν με πιλάφι, τυρί φέτα - Χοιρινό κρασάτο με ρύζι \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΠαρασκευή \n1ο.Σούπα κρέμας μπρόκολο - Σουπιές σπανάκι \n2ο.Ρεβίθια φούρνου, τυρί φέτα - Σπαγγέτι καρμπονάρα, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΣάββατο \n1ο.Σούπα σαμπενουά - Εντσιλάδας με λουκάνικο \n2ο.Μοσχάρι Κελαηδί λάρισας, σουφλέ ζυμαρικών - Κοτόπουλο Μιλανέζε, σουφλέ λαχανικών, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΚυριακή \n1ο.Σούπα ντυπαρύ - Burittos με ομελέτα ( ελληνικός τρόπος) \n2ο.Αρνί γιουβέτσι - Μοσχάρι φαντασία με ραβιόλια \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n"
+            android:id="@+id/textView11"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </ScrollView>
+</RelativeLayout>

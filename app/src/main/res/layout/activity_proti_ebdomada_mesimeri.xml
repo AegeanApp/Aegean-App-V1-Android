@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:screenOrientation="portrait"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.george.test_aegean_app.proti_ebdomada_mesimeri">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Δευτέρα \n1ο.Κρεατόσουπα με διάφορα λαχανικά - Τορτίγιες με λαχανικά \n2ο.Μουσακάς - Καλαμαράκια γιαχνί με πιλάφι \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤρίτη \n1ο.Σούπα Ριζότο μανιτάρια - Μακεδονίτικη κολοκυθόπιτα \n2ο.Κοτόπουλο κοκκινιστό με αρακά, τυρί φέτα - Χοιρινό κοντοσούβλι του ΣΕΦ, πατάτες φούρνου \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤετάρτη \n1ο.Μινεστρόνι αλά Μιλανέζε - Ντολμαδάκια γιαλατζί \n2ο.Φασόλια γίγαντες φούρνου, τυρί φέτα, ελιές - Αγκινάρες αλά πολίτα, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΠέμπτη \n1ο.Κρεατόσουπα με κριθαράκι - Πίτα Καισαρείας \n2ο.Μπριζόλα Χοιρινή με πουρέ πατάτας - Κοτόπουλο εντσιλάντας με κοχυλάκια , τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΠαρασκευή \n1ο.Ντολμαδάκια βελουτέ - Φρουτάλια με πατάτα κια λουκάνικα \n2ο.Φακές σούπα, ελιές, τυρί φέτα - Σουφλέ λαζάνια με κιμά, τυρί τριμμένο, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΣάββατο \n1ο.Κρεατόσουπα - Καλαμαράκια κρασάτα \n2ο.Μοσχάρι Ορλώφ, με ζυμαρικά - Κοτόπουλο λεμονάτο στο φούρνο με πατάτες, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΚυριακή \n1ο.Χορτόσουπα - Κρέπες (γέμιση τυρί) \n2ο.Χοιρινό γιουβέτσι - Μοσχάρι σούπα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    </ScrollView>
+</RelativeLayout>

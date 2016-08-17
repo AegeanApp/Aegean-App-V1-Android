@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.george.test_aegean_app.tetarti_ebdomada_mesimeri">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Δευτέρα \n1ο.Σούπα αλενουά - Τονοσαλάτα \n2ο.Ψάρι αλα σπετσιώτα - Μακαρόνια με μπαλάκια κιμά κοκκινιστά, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤρίτη \n1ο.Σούπα κρέμα αγκινάρες - Μελιτζανόπιτα \n2ο.Κοτόπουλο δεντρολίβανο με πατάτες φούρνου, τυρί φέτα - Χοιρνό ψητό με πιλάφι \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤετάρτη \n1ο.Σούπα κρέμα μπρόκολο - Μακεδονίτικη πρασοκιμαδότπιτα \n2ο.Φασόλια σούπα, τυρί φέτα - Αγκινάρες βινεγκρέτ, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχή \n \nΠέμπτη \n1ο.Σούπα σαμπενουά - Burritos με ομελέτα \n2ο.Χοιρινά φιλετάκια με μουστάρδα και πατάτες φούρνου - Γαλοπούλα με χυλοπίτες, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΠαρασκευή \n1ο.Σούπα ντύπαρύ - Τορτίγιες με λιωμένο τυρι και κιμά \n2ο.Φάβα Μυτιλήνης - Σουφλέ ζυμαρικών \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΣάββατο \n1ο.Σούπα λουγκσόν - Πίτα Σικελίας \n2ο.Μοσχάρι σουφλέ με κρητικό γαμοπίλαφο - Κοτόπουλο ψητό με πατάτες τηγανητές, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΚυριακή \n1ο.Κοτόσουπα αυγολέμονο - Σαλάτα Βουδαπέστης \n2ο.Χοιρινό σνιτσελ με ριζότο  - Μοσχάρι φαντασία με ζυμαρικά \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n"
+            android:id="@+id/textView11"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </ScrollView>
+</RelativeLayout>

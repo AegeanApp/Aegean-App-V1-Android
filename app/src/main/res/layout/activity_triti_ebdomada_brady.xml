@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.george.test_aegean_app.triti_ebdomada_brady">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Δευτέρα \n1ο.Σούπα με κρέμα σπανάκι - Ντολμαδάκια γιαλατζί \n2ο.Γεμιστά, τυρί φέτα - Χυλοπίτες Πυλιορίτκες \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤρίτη \n1ο.Σούπα μακαρονάκι και φασόλια - Τυροπιτάκια \n2ο.Κεφτεδάκια παραδοσικά φούρνου και πατάτες φούρνου - Ψάρι φουύρνου με πατατοσαλάτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΤετάρτη \n1ο.Σούπα Σαβουαγιάρντ - Κρέπες με γέμιση μανιτάρια \n2ο.Μενέστρα Ελασσόνας, τυρί φέτα - Μπριάμ, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχή \n \nΠέμπτη \n1ο.Σουπα Μπεαρναίζ - Ομελέτα στραπατσάδα \n2ο.Μπιφτεέκι με ζυμαρικά  - Fussili φούρνου με χταπόδι \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΠαρασκευή \n1ο.Σούπα μπιστού - Σαλάτα κοχυλάκι \n2ο.Πρασόπιτα με ζαμπόν - Ομελέτα φούρνου,τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΣάββατο \n1ο.Σουπα κρέσυ - Σπανακοτυρόπιτα Καστοριάς \n2ο.Ψάρι εποχής φρέσκο πλακί - Ρολό κιμά πατάτες ριγανάτες \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n \nΚυριακή \n1ο.Σούπα κάρδαμο - Κιμαδοκουλούρες \n2ο.Χορτοπικα κεφαλλονίτικη  - Κοτόπυλο ραβιόλια, τυρί φέτα \n3ο.Σαλάτα εποχής ωμή - Σαλάτα εποχής βραστή \n4ο.Γλυκό - Φρούτο εποχής \n"
+            android:id="@+id/textView11"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </ScrollView>
+</RelativeLayout>
