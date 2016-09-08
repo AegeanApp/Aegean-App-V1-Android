@@ -34,7 +34,7 @@
         android:onClick="icsdOnClick"
         android:text="@string/button1"
         android:textColor="#000000"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/button2"
@@ -48,7 +48,7 @@
         android:onClick="saxmOnClick"
         android:text="@string/button2"
         android:textColor="#000000"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/button"
@@ -96,7 +96,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerInParent="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"/>
     </RelativeLayout>
 
     <Button
