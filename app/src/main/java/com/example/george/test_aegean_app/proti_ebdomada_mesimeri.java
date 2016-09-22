@@ -13,7 +13,7 @@ public class proti_ebdomada_mesimeri extends ActionBarActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proti_ebdomada_mesimeri);
-        getSupportActionBar().setTitle("2η Εβδομάδα Μεσημεριανό");//allagi tou titlou sto actionbar
+        getSupportActionBar().setTitle("1η Εβδομάδα Μεσημεριανό");//allagi tou titlou sto actionbar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//energopoiisi tou back button
     }
 

@@ -2,6 +2,7 @@ package com.example.george.test_aegean_app;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
@@ -10,6 +11,7 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -39,7 +41,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
         dropdown = (Spinner) findViewById(R.id.list1);
-        String[] items = new String[]{"Κτίριο Εμπορικής Σχολής", "Γραμματεία Τμήματος Μαθηματικών"};
+        String[] items = new String[]{"Κτίριο Εμπορικής Σχολής", "Γραμματεία Τμήματος Μαθηματικών", "Βιβλιοθήκη","Εργαστήριο Πολυμέσων","Κτίριο Λυμπέρη - Γραμματεία Τμήματος ΜΠΕΣ","Φοιτητική Λέσχη","Γραμματεία Τμήματος Στατιστικής","Κτίριο Προβατάρη","Αίθουσα Δήμου","Νέο Σχολικό","Μεσαίο Σχολικό Συγκρότημα","Κτήριο Παπανικολάου","Κτήριο Ψαθά"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
         dropdown.setAdapter(adapter);
 
@@ -87,26 +89,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            return;
+            Dialog("Η χρήση της τοποθεσίας σας δεν είναι ενεργή");
         }
         mMap.setMyLocationEnabled(true);//user's location
 
     }
-    /*public void locateClick(View v)
-    {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-        // TODO: Consider calling
-        //    ActivityCompat#requestPermissions
-        // here to request the missing permissions, and then overriding
-        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-        //                                          int[] grantResults)
-        // to handle the case where the user grants the permission. See the documentation
-        // for ActivityCompat#requestPermissions for more details.
-        return;
-        }
-        mMap.setMyLocationEnabled(true);//relocates because previous marker was cleared
-
-    }*/
     public void loadClick()//method for loading markers
     {
         val_list1 = (String) dropdown.getSelectedItem();
@@ -192,7 +179,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         //View v=null;
         //locateClick(v);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -200,8 +188,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
-            return;
+            Dialog("Η χρήση της τοποθεσίας σας δεν είναι ενεργή");
+
         }
         mMap.setMyLocationEnabled(true);//relocates because previous marker was cleared
+    }
+    public void Dialog(String msg)
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(msg)
+                .setCancelable(false)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener()
+                {
+                    //exits the application
+                    public void onClick(DialogInterface dialog, int id)
+                    {
+                       return;
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 }
