@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:alpha="0.8"
         android:background="@android:drawable/btn_dropdown"
-        android:foreground="#000000"
+
         android:spinnerMode="dropdown"
         android:textColor="#000000"
         android:textStyle="bold" />

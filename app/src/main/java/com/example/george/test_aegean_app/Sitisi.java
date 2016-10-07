@@ -3,7 +3,6 @@ package com.example.george.test_aegean_app;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -13,18 +12,19 @@ import android.widget.Spinner;
 public class Sitisi extends ActionBarActivity {
     private Spinner dropdown;
     private Spinner dropdown2;
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sitisi);
         getSupportActionBar().setTitle("Πρόγραμμα Σίτισης");//setting title in actionBar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//energopoiisi tou back button
 
-        dropdown = (Spinner)findViewById(R.id.list1);
-        dropdown2 = (Spinner)findViewById(R.id.list2);
+        dropdown = (Spinner) findViewById(R.id.list1);
+        dropdown2 = (Spinner) findViewById(R.id.list2);
         //1h lista gia ebdomades
-        String[] items = new String[]{"1η Εβδομάδα", "2η Εβδομάδα", "3η Εβδομάδα","4η Εβδομάδα"};
+        String[] items = new String[]{"1η Εβδομάδα", "2η Εβδομάδα", "3η Εβδομάδα", "4η Εβδομάδα"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
         dropdown.setAdapter(adapter);
         //2h lista gia ebdomades
@@ -32,52 +32,50 @@ public class Sitisi extends ActionBarActivity {
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items2);
         dropdown2.setAdapter(adapter2);
     }
+
     private String val_list1;
     private String val_list2;
-    public void okOnClick(View v)
-    {
+
+    public void okOnClick(View v) {
+
         val_list1 = (String) dropdown.getSelectedItem();
-        val_list2 = (String)dropdown2.getSelectedItem();
-        if(val_list1.equals("1η Εβδομάδα") && val_list2.equals("Βραδινό"))
-        {
-            Intent i =new Intent(this,proti_ebdomada_brady.class);
-            startActivity(i);
+        val_list2 = (String) dropdown2.getSelectedItem();
+        int week = 0, daytime = 0;
+
+        if (val_list2.equals("Βραδινό"))
+            daytime = 2;
+        else
+            daytime = 1;
+
+
+        if (val_list1.equals("1η Εβδομάδα")) {
+            week = 1;
+        } else if (val_list1.equals("2η Εβδομάδα")) {
+            week = 2;
+        } else if (val_list1.equals("3η Εβδομάδα")) {
+            week = 3;
+        } else if (val_list1.equals("4η Εβδομάδα")) {
+            week = 4;
         }
-        else if(val_list1.equals("1η Εβδομάδα") && val_list2.equals("Μεσημεριανό"))
-        {
-            Intent i =new Intent(this,proti_ebdomada_mesimeri.class);
-            startActivity(i);
-        }
-        else if(val_list1.equals("2η Εβδομάδα") && val_list2.equals("Μεσημεριανό"))
-        {
-            Intent i =new Intent(this,deuteri_ebomaxa_mesimeri.class);
-            startActivity(i);
-        }
-        else if(val_list1.equals("2η Εβδομάδα") && val_list2.equals("Βραδινό"))
-        {
-            Intent i =new Intent(this,deuteri_ebdomada_brady.class);
-            startActivity(i);
-        }
-        else if(val_list1.equals("3η Εβδομάδα") && val_list2.equals("Μεσημεριανό"))
-        {
-            Intent i =new Intent(this,triti_ebdomada_mesimeri.class);
-            startActivity(i);
-        }
-        else if(val_list1.equals("3η Εβδομάδα") && val_list2.equals("Βραδινό"))
-        {
-            Intent i =new Intent(this,triti_ebdomada_brady.class);
-            startActivity(i);
-        }
-        else if(val_list1.equals("4η Εβδομάδα") && val_list2.equals("Μεσημεριανό"))
-        {
-            Intent i =new Intent(this,tetarti_ebdomada_mesimeri.class);
-            startActivity(i);
-        }
-        else if(val_list1.equals("4η Εβδομάδα") && val_list2.equals("Βραδινό"))
-        {
-            Intent i =new Intent(this,tetarti_ebdomada_brady.class);
-            startActivity(i);
-        }
+
+
+        Intent i = new Intent(this, FoodActivity.class);
+
+        //Create the bundles
+        Bundle bundle1 = new Bundle();
+        Bundle bundle2 = new Bundle();
+        String weekSt = String.valueOf(week);
+        String daytimeSt = String.valueOf(daytime);
+        //Add your data to bundle
+        bundle1.putString("week", weekSt);
+        bundle1.putString("daytime", daytimeSt);
+        //Add the bundle to the intent
+        i.putExtras(bundle1);
+        i.putExtras(bundle2);
+
+        startActivity(i);
+
+
     }
 
     @Override
@@ -88,7 +86,7 @@ public class Sitisi extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id==android.R.id.home) {
+        if (id == android.R.id.home) {
             finish();//na mporei to back button na paei pisw
         }
 

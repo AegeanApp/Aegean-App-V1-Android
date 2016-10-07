@@ -22,6 +22,7 @@ public class MainPage extends ActionBarActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
+        getSupportActionBar().setTitle("Aegean App");
     }
 
     @Override

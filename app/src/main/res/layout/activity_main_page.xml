@@ -30,7 +30,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:alpha="0.6"
-        android:foreground="#000000"
+
         android:onClick="icsdOnClick"
         android:text="@string/button1"
         android:textColor="#000000"
@@ -44,7 +44,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:alpha="0.6"
-        android:foreground="#000000"
+
         android:onClick="saxmOnClick"
         android:text="@string/button2"
         android:textColor="#000000"
@@ -58,7 +58,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:alpha="0.6"
-        android:foreground="#000000"
+
         android:onClick="mathOnClick"
         android:text="@string/button3"
         android:textColor="#000000"
@@ -74,7 +74,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:alpha="0.6"
-        android:foreground="#000000"
+
         android:onClick="sitisiOnClick"
         android:text="@string/sitisi"
         android:textColor="#000000"
@@ -113,7 +113,8 @@
         android:background="@drawable/round_btn"
         android:onClick="mapsClick"
         android:alpha="0.5"
-        android:foreground="#000000"
+
         android:textColor="#000000"
         android:textStyle="bold"/>
+
 </RelativeLayout>
