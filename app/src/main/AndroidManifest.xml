@@ -7,6 +7,7 @@
              Google Maps Android API v2, but you must specify either coarse or fine
              location permissions for the 'MyLocation' functionality.
     -->
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="package.name.permission.MAPS_RECEIVE" />
@@ -36,22 +37,11 @@
             android:name=".Sitisi"
             android:label="@string/title_activity_sitisi"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".proti_ebdomada_brady"
-            android:label="@string/title_activity_proti_ebdomada_brady"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".proti_ebdomada_mesimeri"
-            android:label="@string/title_activity_proti_ebdomada_mesimeri"
-            android:screenOrientation="portrait" />
+
+
         <activity android:name=".saxm_page" />
         <activity android:name=".math_page" />
-        <activity android:name=".deuteri_ebomaxa_mesimeri" />
-        <activity android:name=".deuteri_ebdomada_brady" />
-        <activity android:name=".triti_ebdomada_mesimeri" />
-        <activity android:name=".triti_ebdomada_brady" />
-        <activity android:name=".tetarti_ebdomada_mesimeri" />
-        <activity android:name=".tetarti_ebdomada_brady" />
+
         <activity android:name=".cal_saxm" />
         <activity android:name=".cal_math" />
         <activity android:name=".cal_icsd" />

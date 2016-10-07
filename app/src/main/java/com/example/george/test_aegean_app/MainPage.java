@@ -32,7 +32,11 @@ public class MainPage extends ActionBarActivity
         getMenuInflater().inflate(R.menu.menu_main_page, menu);
         return true;
     }
-
+    @Override
+    public void onBackPressed()
+    {
+        finish();
+    }
     public void imageOnClick(View v)
     {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.aegean.gr"));
