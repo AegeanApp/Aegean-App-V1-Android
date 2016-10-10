@@ -3,12 +3,12 @@ package com.example.george.test_aegean_app;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class cal_saxm extends AppCompatActivity {
+public class AboutPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cal_saxm);
-        getSupportActionBar().setTitle("Aegean App");
+        setContentView(R.layout.activity_about_page);
+        getSupportActionBar().setTitle("About");
     }
 }

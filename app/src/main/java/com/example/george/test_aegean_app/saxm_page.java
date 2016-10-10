@@ -44,38 +44,66 @@ public class saxm_page extends AppCompatActivity {
     }
     public void eclassClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://eclass.aegean.gr"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://eclass.aegean.gr"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "https://eclass.aegean.gr";
+        i.putExtra("link", link);
+        startActivity(i);
     }
     public void icarusClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://sef.samos.aegean.gr/"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://sef.samos.aegean.gr/"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "https://sef.samos.aegean.gr/";
+        i.putExtra("link", link);
+        startActivity(i);
     }
     public void mailClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://webmail.aegean.gr/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.aegean.gr%2fowa"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://webmail.aegean.gr/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.aegean.gr%2fowa"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "https://webmail.aegean.gr/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.aegean.gr%2fowa";
+        i.putExtra("link", link);
+        startActivity(i);
     }
     public void eudoxusClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://eudoxus.gr/"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://eudoxus.gr/"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "http://eudoxus.gr/";
+        i.putExtra("link", link);
+        startActivity(i);
     }
     public void startPageClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.actuar.aegean.gr"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.actuar.aegean.gr"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "http://www.actuar.aegean.gr";
+        i.putExtra("link", link);
+        startActivity(i);
     }
     public void searchPageClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "http://www.google.com";
+        i.putExtra("link", link);
+        startActivity(i);
     }
     public void MscClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.actuar.aegean.gr/postgraduate.html"));
-        startActivity(browserIntent);
+        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.actuar.aegean.gr/postgraduate.html"));
+        //startActivity(browserIntent);
+        Intent i = new Intent(this, WebViewActivity.class);
+        String link = "http://www.actuar.aegean.gr/postgraduate.html";
+        i.putExtra("link", link);
+        startActivity(i);
     }
 
     public void calClick(View v)
@@ -113,14 +141,16 @@ public class saxm_page extends AppCompatActivity {
         startActivity(intent);//starts pdf viewer
     }
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id==android.R.id.home) {
+        if (id == android.R.id.home)
+        {
             finish();//na mporei to back button na paei pisw
         }
 

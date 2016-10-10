@@ -9,5 +9,6 @@ public class cal_math extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cal_math);
+        getSupportActionBar().setTitle("Aegean App");
     }
 }

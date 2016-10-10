@@ -9,5 +9,6 @@ public class cal_icsd extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cal_icsd);
+        getSupportActionBar().setTitle("Aegean App");
     }
 }

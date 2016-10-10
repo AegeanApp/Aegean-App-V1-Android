@@ -8,23 +8,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.george.test_aegean_app.cal_saxm">
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
         <TextView
+            android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Χειμερινό Εξάμηνο \nΈναρξη Μαθημάτων : 5.10.2015 \nΛήξη Μαθημάτων: 22.01.2016 \nΔιάρκεια Εξαμήνου: 13 εβδομάδες \nΠερίοδος ειδικών εκπαιδευτικών αναγκών και εξεταστικής : 25.01.2016 εως 19.02.2016 \n \nΑργίες \nΤρίτη 28.10.2015 - Εθνική Εορτή \nΔευτέρα 17.11.2015 - Επέτειος Πολυτεχνείου \nΔιακοπές Χριστουγέννων: 21.12.2015-06.01.2016 \nΠέμπτη 30.01.2016 - Τριών Ιεραρχών \n \nΕαρινό Εξάμηνο \nΈναρξη Μαθημάτων: 22.02.2016 \nΛήξη Μαθημάτων: 03.06.2016 \n Διάρκεια Εξαμήνου: 13 εβδομάδες \nΠερίοδος ειδικών εκπαιδευτικών αναγκών και εξεταστικής : 06.06.2016 εως 30.06.2016
- \n \nΑργίες \nΚαθαρή Δευτέρα 14.03.2016 \nΠαρασκευή 25.03.2016 - Εθνική Εορτή \nΔιακοπές Πάσχα: 25.04.2016-8.05.2016 \nΚυριακή 01.05.201 - Πρωτομαγιά \n Δευτέρα Αγίου Πνεύματος: 20.06.2015 \n"
-            android:id="@+id/textView11"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Χειμερινό Εξάμηνο \nΈναρξη Μαθημάτων : 03.10.2016 \nΛήξη Μαθημάτων: 20.01.2017 \nΔιάρκεια Εξαμήνου: 13 εβδομάδες \nΠερίοδος ειδικών εκπαιδευτικών αναγκών και εξεταστικής : 23.01.2017 εως 17.02.2017 \n \nΑργίες \nΤρίτη 28.10.2016 - Εθνική Εορτή \nΔευτέρα 28.10.2016 - Επέτειος Πολυτεχνείου \nΔιακοπές Χριστουγέννων: 21.12.2016 - 06.01.2017 \n 30.01.2017 - Τριών Ιεραρχών \n \nΕαρινό Εξάμηνο \nΈναρξη Μαθημάτων:   20.02.2017 \nΛήξη Μαθημάτων: 02.06.2017 \n Διάρκεια Εξαμήνου: 13 εβδομάδες \nΠερίοδος ειδικών εκπαιδευτικών αναγκών και εξεταστικής : 06.06.2017 εως 30.06.2017
+ \n \nΑργίες \nΚαθαρή Δευτέρα 27.02.2017 \n  25.03.2017 - Εθνική Εορτή \nΔιακοπές Πάσχα: 10.04.2017 - 23.04.2017 \n 01.05.2017 - Πρωτομαγιά \n Αγίου Πνεύματος: 05.06.2017 \n"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
     </ScrollView>
 </RelativeLayout>
