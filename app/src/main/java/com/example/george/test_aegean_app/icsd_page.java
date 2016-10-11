@@ -1,6 +1,7 @@
 package com.example.george.test_aegean_app;
 
 import android.app.ActionBar;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -9,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.net.Uri;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -146,32 +148,9 @@ public class icsd_page extends ActionBarActivity
 
     public void scheduleClick(View v)
     {
-        AssetManager assetManager = getAssets();//access to assets folder
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/339224911.pdf"));
+        startActivity(browserIntent);
 
-        InputStream in = null;
-        OutputStream out = null;
-        File file = new File(getFilesDir(), "icsd_Schedule.pdf");//gets directory
-        try
-        {
-            in = assetManager.open("icsd_Schedule.pdf");
-            out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-            copyFile(in, out);//copies file to the output
-            in.close();
-            in = null;
-            out.flush();
-            out.close();
-            out = null;
-        }
-        catch (Exception e)
-        {
-            Log.e("tag", e.getMessage());
-        }
-
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setDataAndType(Uri.parse("file://" + getFilesDir() + "/icsd_Schedule.pdf"), "application/pdf");
-
-        startActivity(intent);//starts pdf viewer
     }
 
     @Override
