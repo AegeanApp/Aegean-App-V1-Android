@@ -70,74 +70,46 @@ public class icsd_page extends ActionBarActivity
 
     public void eclassClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://eclass.icsd.aegean.gr"));
-        //startActivity(browserIntent);
-
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "https://eclass.icsd.aegean.gr";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://eclass.icsd.aegean.gr"));
+        startActivity(browserIntent);
 
     }
 
     public void icarusClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://icarus-icsd.aegean.gr/"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "https://icarus-icsd.aegean.gr/";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://icarus-icsd.aegean.gr/"));
+        startActivity(browserIntent);
     }
 
     public void mailClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://webmail.aegean.gr/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.aegean.gr%2fowa"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "https://webmail.aegean.gr/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.aegean.gr%2fowa";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://webmail.aegean.gr/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.aegean.gr%2fowa"));
+        startActivity(browserIntent);
     }
 
     public void eudoxusClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://eudoxus.gr/"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "http://eudoxus.gr/";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://eudoxus.gr/"));
+        startActivity(browserIntent);
     }
 
     public void startPageClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "http://www.icsd.aegean.gr/";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/"));
+        startActivity(browserIntent);
     }
 
     public void searchPageClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "http://www.google.com";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        startActivity(browserIntent);
+
     }
 
     public void MscClick(View v)
     {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.msc.icsd.aegean.gr"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "https://msc.icsd.aegean.gr";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.msc.icsd.aegean.gr"));
+        startActivity(browserIntent);
     }
 
     public void CalClick(View v)
@@ -148,7 +120,7 @@ public class icsd_page extends ActionBarActivity
 
     public void scheduleClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/339224911.pdf"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/339224911.pdf"));//here must be the OneDrive link
         startActivity(browserIntent);
 
     }
