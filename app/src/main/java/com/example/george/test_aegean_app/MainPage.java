@@ -38,12 +38,8 @@ public class MainPage extends ActionBarActivity {
     }
 
     public void imageOnClick(View v) {
-        //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.aegean.gr"));
-        //startActivity(browserIntent);
-        Intent i = new Intent(this, WebViewActivity.class);
-        String link = "https://www.aegean.gr";
-        i.putExtra("link", link);
-        startActivity(i);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.aegean.gr"));
+        startActivity(browserIntent);
     }
 
     public void icsdOnClick(View v) {

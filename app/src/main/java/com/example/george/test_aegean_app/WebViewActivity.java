@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
 
 public class WebViewActivity extends AppCompatActivity
 {
-
+    //this activity is not used in project was only added for testing purpose
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

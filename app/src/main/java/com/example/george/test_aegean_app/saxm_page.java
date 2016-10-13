@@ -86,33 +86,11 @@ public class saxm_page extends AppCompatActivity {
         startActivity(i);
 
     }
-    //this must change with an Intent which has the OneDrive link
+
     public void scheduleClick(View v)
     {
-        AssetManager assetManager = getAssets();//access to assets folder
-
-        InputStream in = null;
-        OutputStream out = null;
-        File file = new File(getFilesDir(), "saxm_Schedule.pdf");//gets directory
-        try
-        {
-            in = assetManager.open("saxm_Schedule.pdf");
-            out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-            copyFile(in, out);//copies file to the output
-            in.close();
-            in=null;
-            out.flush();
-            out.close();
-            out=null;
-        } catch (Exception e) {
-            Log.e("tag", e.getMessage());
-        }
-
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setDataAndType(Uri.parse("file://" + getFilesDir() + "/saxm_Schedule.pdf"), "application/pdf");
-
-        startActivity(intent);//starts pdf viewer
+        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.pdf-archive.com/2016/10/13/saxm-schedule/saxm-schedule.pdf"));
+        startActivity(i);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
