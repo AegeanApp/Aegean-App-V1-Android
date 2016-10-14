@@ -86,7 +86,7 @@ public class math_page extends AppCompatActivity {
 
     public void scheduleClick(View v)
     {
-        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.pdf-archive.com/2016/10/13/math-schedule/math-schedule.pdf"));
+        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse(""));//here must be the link that host the pdf(pdf archive?)
         startActivity(i);
     }
     @Override

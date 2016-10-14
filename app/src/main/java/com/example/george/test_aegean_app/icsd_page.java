@@ -120,7 +120,7 @@ public class icsd_page extends ActionBarActivity
 
     public void scheduleClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.pdf-archive.com/2016/10/13/icsd-schedule/icsd-schedule.pdf"));//here must be the link that host the pdf(pdf archive?)
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));//here must be the link that host the pdf(pdf archive?)
         startActivity(browserIntent);
 
     }
