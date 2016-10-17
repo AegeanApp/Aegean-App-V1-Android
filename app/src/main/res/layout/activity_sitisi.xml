@@ -40,18 +40,45 @@
 
         android:textColor="#000000"
         android:textStyle="bold" />
+<!--  daily feature picker for food activity
+    <Spinner
+        android:id="@+id/list3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/list2"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+
+        android:textColor="#000000"
+        android:textStyle="bold" />
+        -->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ok"
-        android:id="@+id/OkBtn"
-        android:layout_marginBottom="50px"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="okOnClick"
+        android:text="See whole week"
+        android:id="@+id/weekBtn"
+        android:onClick="weekOnClick"
         android:alpha="0.8"
         android:textColor="#000000"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+<!-- daily feature picker
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayBtn"
+        android:onClick="dayOnClick"
+        android:layout_above="@+id/weekBtn"
+        android:alpha="0.8"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="day" />
+-->
 </RelativeLayout>
