@@ -90,6 +90,7 @@ public class saxm_page extends AppCompatActivity {
     public void scheduleClick(View v)
     {
         Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.actuar.aegean.gr/orologio_programma.pdf"));//here must be the link that host the pdf(pdf archive?)
+        i.setType("application/pdf");
         startActivity(i);
     }
     @Override
