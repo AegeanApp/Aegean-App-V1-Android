@@ -82,7 +82,8 @@ public class saxm_page extends AppCompatActivity {
 
     public void calClick(View v)
     {
-        Intent i = new Intent (this,cal_saxm.class);
+        //Intent i = new Intent (this,cal_saxm.class);
+        Intent i = new Intent (this , AcademaicCalendarPage.class);
         startActivity(i);
 
     }
