@@ -25,4 +25,9 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_tabbed_academaic_cal">TabbedAcademaicCal</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_academaic_calendar_page">AcademaicCalendarPage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

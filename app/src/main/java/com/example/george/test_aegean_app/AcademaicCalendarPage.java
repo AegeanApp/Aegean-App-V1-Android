@@ -1,5 +1,8 @@
 package com.example.george.test_aegean_app;
 
+import android.support.design.widget.TabLayout;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -14,16 +17,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.ListView;
 import android.widget.TextView;
 
-public class TabbedAcademaicCal extends AppCompatActivity {
+public class AcademaicCalendarPage extends AppCompatActivity {
 
-    static final String[] WinterGeneralDates = new String[] { "3/10/2016", "20/01/2017", "13","23/01/2017-17/02/2017"};
-    static final String[] WinterholidaysDates = new String[] { "28/10/2016", "17/11/2016", "22/12/2016-06/01/2017","30/01/2017"};
-
-    static final String[] SummerGeneralDates = new String[] { "20/02/2017", "02/06/2017", "13","06/06/2017-30/06/2017" };
-    static final String[] SummerholidaysDates = new String[] { "27/02/2017", "25/03/2017", "10/04/2017-21/04/2017","01/05/2017","05/06/2017"};
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -38,12 +35,11 @@ public class TabbedAcademaicCal extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
-private ListView WinterList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tabbed_academaic_cal);
-
+        setContentView(R.layout.activity_academaic_calendar_page);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -55,13 +51,25 @@ private ListView WinterList;
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(mViewPager);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_tabbed_academaic_cal, menu);
+        getMenuInflater().inflate(R.menu.menu_academaic_calendar_page, menu);
         return true;
     }
 
@@ -80,12 +88,15 @@ private ListView WinterList;
         return super.onOptionsItemSelected(item);
     }
 
-// PlaceHolder deleted from here manualy
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
-    // NAVIGATION PART
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -94,13 +105,15 @@ private ListView WinterList;
 
         @Override
         public Fragment getItem(int position) {
+            // getItem is called to instantiate the fragment for the given page.
+            // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position) {
-                case 0: // winter cal
-                    WinterCal tab1 = new WinterCal();
-                    return tab1;
-                case 1: //summer cal
-                    SummerCal tab2 = new SummerCal();
-                    return  tab2;
+                case 0:
+                    WinterFragPage Wintertab = new WinterFragPage();
+                    return Wintertab;
+                case 1:
+                    SummerFragPage Summertab = new SummerFragPage();
+                    return Summertab;
                 default:
                     return null;
             }
@@ -108,7 +121,7 @@ private ListView WinterList;
 
         @Override
         public int getCount() {
-            // Show 2 total pages.
+            // Show 3 total pages.
             return 2;
         }
 
@@ -116,9 +129,10 @@ private ListView WinterList;
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Winter Calendar";
+                    return "SECTION 1";
                 case 1:
-                    return "Summer Calendar";
+                    return "SECTION 2";
+
             }
             return null;
         }
