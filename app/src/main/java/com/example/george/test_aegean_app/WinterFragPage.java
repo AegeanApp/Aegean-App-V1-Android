@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.List;
 
 
 /**
@@ -26,17 +30,10 @@ public class WinterFragPage extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private String []  CalGeneral = {"Έναρξη/Λήξη Μαθημάτων","Περίοδος Ειδικών αναγκών και εξεταστικής"};
 
-    private String []  IcsdCalGeneralStrg = {"",""};
-    private String []  MathCalGeneralStrg = {"",""};
-    private String []  SaxmCalGeneralStrg = {"",""};
 
-    private  String [] WinterCalHolidays={"Εθνικη Εορτή","Επέτειος Πολυτεχνείου","Διακοπές Χριστουγέννων"};
-    private String []  CalGeneralStrg = {"",""};
-    private  String [] SummerCalHolidays={"Καθαρά Δευτέρα","Εθνική Εορτή","Διακοπέσ Πάσχα","Πρωτομαγιά","Αγίου Πνεύματος"};
-    private String []  CalGeneralStrg = {"",""};
-
+    private ListView holidayscal = null;
+    private String []  WinterGeneral = {"Έναρξη/Λήξη Μαθημάτων\n03/10/2016 - 20/01/2017","Περίοδος Ειδικών αναγκών και εξεταστικής\n23/01/2017 - 17/02/2017","Εθνικη Εορτή\n28/10/2016","Επέτειος Πολυτεχνείου\n17/11/2016","Διακοπές Χριστουγέννων\n22/12/2016 - 06/01/2017","Τριών Ιεραρχών\n30/01/2017"};
     private OnFragmentInteractionListener mListener ;
 
     public WinterFragPage() {
@@ -64,6 +61,9 @@ public class WinterFragPage extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -74,13 +74,23 @@ public class WinterFragPage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_winter_frag_page, container, false);
+
+        View view =  inflater.inflate(R.layout.fragment_winter_frag_page, container, false);
+        ListView generalCal = (ListView) view.findViewById(R.id.winterGenCal);
+        ArrayAdapter generalCalAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, WinterGeneral);
+
+        generalCal.setAdapter(generalCalAdapter);
+
+
+        return view;
         /*
         *       View rootView = inflater.inflate(R.layout.fragment_academaic_calendar_page, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         * */
+        //Filling the two List Views
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

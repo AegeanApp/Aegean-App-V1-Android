@@ -32,6 +32,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:alpha="0.6"
+        android:fontFamily="serif"
 
         android:onClick="icsdOnClick"
         android:text="@string/button1"

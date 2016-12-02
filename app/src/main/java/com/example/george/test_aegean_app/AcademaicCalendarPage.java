@@ -40,7 +40,7 @@ public class AcademaicCalendarPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_academaic_calendar_page);
-
+        setTitle("Ακαδημαικό Ημερολόγιο");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
@@ -129,9 +129,9 @@ public class AcademaicCalendarPage extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Χειμερινό Εξάμινο";
                 case 1:
-                    return "SECTION 2";
+                    return "Εαρινό Εξάμινο";
 
             }
             return null;
