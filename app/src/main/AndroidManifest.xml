@@ -13,8 +13,8 @@
     <uses-permission android:name="package.name.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -60,8 +60,12 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".FoodActivity" />
-        <activity android:name=".WebViewActivity"></activity>
-        <activity android:name=".AboutPage"></activity>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".AboutPage" />
+        <activity
+            android:name=".TabbedAcademaicCal"
+            android:label="@string/title_activity_tabbed_academaic_cal"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

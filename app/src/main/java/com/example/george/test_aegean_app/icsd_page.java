@@ -114,7 +114,8 @@ public class icsd_page extends ActionBarActivity
 
     public void CalClick(View v)
     {
-        Intent i = new Intent(this, cal_icsd.class);
+       // Intent i = new Intent(this, cal_icsd.class);
+        Intent i = new Intent(this,TabbedAcademaicCal.class);
         startActivity(i);
     }
 

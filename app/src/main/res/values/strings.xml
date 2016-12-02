@@ -23,4 +23,6 @@
     <string name="title_activity_saxm_page">saxm_page</string>
     <string name="title_activity_math_page">math_page</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_tabbed_academaic_cal">TabbedAcademaicCal</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
