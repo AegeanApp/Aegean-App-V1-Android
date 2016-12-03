@@ -58,7 +58,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See whole week"
+            android:text="OK"
         android:id="@+id/weekBtn"
         android:onClick="weekOnClick"
         android:alpha="0.8"

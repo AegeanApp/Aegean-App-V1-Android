@@ -1,6 +1,5 @@
 package com.example.george.test_aegean_app;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.List;
+
 
 
 /**
@@ -32,7 +31,7 @@ public class WinterFragPage extends Fragment {
     private String mParam2;
 
 
-    private ListView holidayscal = null;
+
     private String []  WinterGeneral = {"Έναρξη/Λήξη Μαθημάτων\n03/10/2016 - 20/01/2017","Περίοδος Ειδικών αναγκών και εξεταστικής\n23/01/2017 - 17/02/2017","Εθνικη Εορτή\n28/10/2016","Επέτειος Πολυτεχνείου\n17/11/2016","Διακοπές Χριστουγέννων\n22/12/2016 - 06/01/2017","Τριών Ιεραρχών\n30/01/2017"};
     private OnFragmentInteractionListener mListener ;
 
@@ -78,27 +77,11 @@ public class WinterFragPage extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_winter_frag_page, container, false);
         ListView generalCal = (ListView) view.findViewById(R.id.winterGenCal);
         ArrayAdapter generalCalAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, WinterGeneral);
-
         generalCal.setAdapter(generalCalAdapter);
 
-
         return view;
-        /*
-        *       View rootView = inflater.inflate(R.layout.fragment_academaic_calendar_page, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
-            return rootView;
-        * */
-        //Filling the two List Views
-
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
 
     @Override

@@ -1,6 +1,5 @@
 package com.example.george.test_aegean_app;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,7 +29,7 @@ public class SummerFragPage extends Fragment {
     private String mParam2;
 
     private String []  SummerGeneral = {"Έναρξη/Λήξη Μαθημάτων\n20/02/2017 - 02/06/2017","Περίοδος Ειδικών αναγκών και εξεταστικής\n06/06/2017 - 30/06/2017","Καθαρά Δευτέρα\n27/02/2017","Εθνική Εορτή\n25/03/2017","Διακοπέσ Πάσχα\n10/04/2017 - 21/04/2017","Πρωτομαγιά\n01/05/2017","Αγίου Πνεύματος\n05/06/2017"};
-    private String []  SummerGeneralDates = {"20/02/2017 - 02/06/2017","06/06/2017 - 30/06/2017","27/02/2017","25/03/2017","10/04/2017 - 21/04/2017","01/05/2017","05/06/2017"};
+
 
 
     private OnFragmentInteractionListener mListener;
@@ -73,19 +72,11 @@ public class SummerFragPage extends Fragment {
         View view2 =  inflater.inflate(R.layout.fragment_summer_frag_page, container, false);
         ListView generalCal2 = (ListView) view2.findViewById(R.id.summerGenCal);
         ArrayAdapter generalCalAdapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, SummerGeneral);
-
         generalCal2.setAdapter(generalCalAdapter2);
-
 
         return view2;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
 
     @Override
