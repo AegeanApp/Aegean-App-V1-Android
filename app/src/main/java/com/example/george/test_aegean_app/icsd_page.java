@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -108,7 +109,7 @@ public class icsd_page extends ActionBarActivity
 
     public void MscClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.msc.icsd.aegean.gr"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://msc.icsd.aegean.gr"));
         startActivity(browserIntent);
     }
 
@@ -121,9 +122,14 @@ public class icsd_page extends ActionBarActivity
 
     public void scheduleClick(View v)
     {
+        /*
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/339224911.pdf"));//here must be the link that host the pdf(pdf archive?)
         browserIntent.setType("application/pdf");
         startActivity(browserIntent);
+        */
+
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/339224911.pdf"));
+        startActivity(i);
 
     }
 

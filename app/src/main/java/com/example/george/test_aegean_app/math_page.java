@@ -89,7 +89,7 @@ public class math_page extends AppCompatActivity {
     public void scheduleClick(View v)
     {
         Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.math.aegean.gr/in/orologio_x16-17.pdf"));//here must be the link that host the pdf(pdf archive?)
-        i.setType("application/pdf");
+       // i.setType("application/pdf");
         startActivity(i);
     }
     @Override

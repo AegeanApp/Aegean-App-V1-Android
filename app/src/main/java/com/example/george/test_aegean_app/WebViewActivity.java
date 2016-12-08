@@ -19,8 +19,7 @@ public class WebViewActivity extends AppCompatActivity
         setContentView(R.layout.activity_web_view);
         getSupportActionBar().setTitle("Aegean App");
         Intent intent = getIntent();
-        String link = intent.getStringExtra("link");
-
+        String link = intent.getStringExtra("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/339224911.pdf");
         WebView wv = (WebView)findViewById(R.id.webview);
         wv.setWebViewClient(new WebViewClient());
         wv.getSettings().setJavaScriptEnabled(true);
@@ -35,6 +34,6 @@ public class WebViewActivity extends AppCompatActivity
 
             }
         });
-        wv.loadUrl(link);
+        wv.loadUrl("http://docs.google.com/gview?embedded=true&url="+link);
     }
 }
