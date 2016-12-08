@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.george.test_aegean_app">
+    package="com.aegeanapp.george.test_aegean_app">
 
     <!--
              The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -17,12 +17,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@drawable/application_icon"
         android:label="Aegean App"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainPage"
+            android:name="com.aegeanapp.george.test_aegean_app.MainPage"
             android:label="Aegean App"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -32,18 +33,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".icsd_page"
+            android:name="com.aegeanapp.george.test_aegean_app.icsd_page"
             android:label="@string/title_activity_icsd_page"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Sitisi"
+            android:name="com.aegeanapp.george.test_aegean_app.Sitisi"
             android:label="@string/title_activity_sitisi"
             android:screenOrientation="portrait" />
-        <activity android:name=".saxm_page" />
-        <activity android:name=".math_page" />
-        <activity android:name=".cal_saxm" />
-        <activity android:name=".cal_math" />
-        <activity android:name=".cal_icsd" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.saxm_page" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.math_page" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.cal_saxm" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.cal_math" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.cal_icsd" />
         <!--
                  The API key for Google Maps-based APIs is defined as a string resource.
                  (See the file "res/values/google_maps_api.xml").
@@ -57,13 +58,13 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.aegeanapp.george.test_aegean_app.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".FoodActivity" />
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".AboutPage" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.FoodActivity" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.WebViewActivity" />
+        <activity android:name="com.aegeanapp.george.test_aegean_app.AboutPage" />
         <activity
-            android:name=".AcademaicCalendarPage"
+            android:name="com.aegeanapp.george.test_aegean_app.AcademaicCalendarPage"
             android:label="@string/title_activity_academaic_calendar_page"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

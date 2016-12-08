@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="portrait"
-    tools:context="com.example.george.test_aegean_app.saxm_page">
+    tools:context="com.aegeanapp.george.test_aegean_app.saxm_page">
 
     <ImageView
         android:id="@+id/iv_background"

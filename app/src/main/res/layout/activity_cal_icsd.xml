@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.george.test_aegean_app.cal_icsd">
+    tools:context="com.aegeanapp.george.test_aegean_app.cal_icsd">
 
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
