@@ -7,7 +7,8 @@
     <string name="button2">Στατιστικής και Αναλογιστικών - Χρηματοοικονομικών Μαθηματικών</string>
     <string name="button3">Μαθηματικών</string>
     <string name="title_activity_icsd_page">I.S.C.D</string>
-
+    <string name="foodVisit"><u>Ιστορικό Επισκέψεων</u></string>
+    <string name="foodCheck"><u>Έλεγχος δωρεάν σίτισης</u></string>
     <string name="Text_ICSD">Aegean University at Samos</string>
     <string name="strPage">Αρχική Σελίδα</string>
     <string name="srchPage">Search</string>

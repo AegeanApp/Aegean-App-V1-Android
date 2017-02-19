@@ -51,7 +51,7 @@
         android:alpha="0.7"
 
         android:onClick="calClick"
-        android:text="Academaic Calendar"
+        android:text="Academic Calendar"
         android:textColor="#000000"
         android:textStyle="bold" />
 

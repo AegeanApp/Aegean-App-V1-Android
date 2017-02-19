@@ -37,7 +37,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Academaic Calendar"
+        android:text="Academic Calendar"
         android:id="@+id/saxm_calendar"
         android:layout_above="@+id/PostGradBtn"
         android:layout_alignParentLeft="true"

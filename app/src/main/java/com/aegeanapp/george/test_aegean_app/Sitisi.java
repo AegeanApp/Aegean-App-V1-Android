@@ -1,6 +1,7 @@
 package com.aegeanapp.george.test_aegean_app;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -16,7 +17,8 @@ public class Sitisi extends ActionBarActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sitisi);
         getSupportActionBar().setTitle("Πρόγραμμα Σίτισης");//setting title in actionBar
@@ -43,7 +45,8 @@ public class Sitisi extends ActionBarActivity {
     private String val_list2;
   //  private String val_list3;
 
-    public void weekOnClick(View v) {
+    public void weekOnClick(View v)
+    {
 
         val_list1 = (String) dropdown.getSelectedItem();
         val_list2 = (String) dropdown2.getSelectedItem();
@@ -101,6 +104,17 @@ public class Sitisi extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void foodVisitHistory(View v)
+    {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://studies.aegean.gr/node/216"));
+        startActivity(browserIntent);
+    }
+    public void freeFoodCheck(View v)
+    {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://studies.aegean.gr/node/17"));
+        startActivity(browserIntent);
     }
    /* public void Dialog(String msg) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

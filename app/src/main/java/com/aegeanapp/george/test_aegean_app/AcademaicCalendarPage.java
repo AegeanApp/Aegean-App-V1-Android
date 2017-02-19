@@ -30,7 +30,7 @@ public class AcademaicCalendarPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_academaic_calendar_page);
+        setContentView(R.layout.activity_academic_calendar_page);
         setTitle("Ακαδημαικό Ημερολόγιο");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
