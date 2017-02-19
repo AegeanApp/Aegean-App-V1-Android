@@ -39,7 +39,7 @@ public class math_page extends AppCompatActivity {
     }
     public void eclassClick(View v)
     {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://eclass.aegean.gr"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cms.math.aegean.gr/"));
         startActivity(browserIntent);
     }
     public void icarusClick(View v)
