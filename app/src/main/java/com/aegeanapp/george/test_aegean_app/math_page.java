@@ -83,7 +83,7 @@ public class math_page extends AppCompatActivity {
 
     public void scheduleClick(View v)
     {
-        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.math.aegean.gr/in/orologio_x16-17.pdf"));//here must be the link that host the pdf(pdf archive?)
+        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("http://samosweb.aegean.gr/math/mathweb/images/articles/announcements/2016-2017/%CE%A9%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%9F%20%CE%A0%CE%A1%CE%9F%CE%93%CE%A1%CE%91%CE%9C%CE%9C%CE%91%20E16-17_version_02.pdf"));//here must be the link that host the pdf(pdf archive?)
        // i.setType("application/pdf");
         startActivity(i);
     }
