@@ -5,7 +5,7 @@ android {
         realease {
             keyAlias 'A3ge@n_20!7'
             keyPassword 'A3ge@n_20!7'
-            storeFile file('/home/george/AndroidStudioProjects/Aegean-App-V1-Android/app/app-release.apk')
+            storeFile file('/home/george/AndroidStudioProjects/Aegean-App-V1-Android/app/aegean-app-release.apk')
             storePassword 'A3ge@n_20!7'
         }
     }
@@ -16,8 +16,8 @@ android {
         minSdkVersion 16
         targetSdkVersion 24
         multiDexEnabled true
-        versionCode 5
-        versionName "1.2.2"
+        versionCode 6
+        versionName "1.2.3"
     }
     buildTypes {
         release {
