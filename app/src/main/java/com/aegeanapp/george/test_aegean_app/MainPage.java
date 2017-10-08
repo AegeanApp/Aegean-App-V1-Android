@@ -22,7 +22,7 @@ public class MainPage extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
-        getSupportActionBar().setTitle("Aegean Uni App");
+        getSupportActionBar().setTitle("Aegean Uni Samos");
     }
 
     @Override

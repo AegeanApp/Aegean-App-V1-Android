@@ -12,7 +12,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion '25.0.0'
     defaultConfig {
-        applicationId "com.aegeanapp.george.test_aegean_app"
+        applicationId "com.aegeanapp.george.test_Aegean_Uni_Samos"
         minSdkVersion 16
         targetSdkVersion 24
         multiDexEnabled true
