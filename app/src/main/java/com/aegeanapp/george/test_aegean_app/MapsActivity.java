@@ -121,7 +121,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void loadClick()//method for loading markers
     {
         val_list1 = (String) dropdown.getSelectedItem();
-        mMap.clear();
+        //mMap.clear();
 
         if (val_list1.equals("Κτίριο Εμπορικής Σχολής")) {
             LatLng sydney = new LatLng(37.794894, 26.706629);
