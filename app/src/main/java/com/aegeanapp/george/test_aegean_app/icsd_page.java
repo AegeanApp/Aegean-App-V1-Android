@@ -29,9 +29,7 @@ public class icsd_page extends ActionBarActivity
         //underlining startp page texview
         TextView txt = (TextView) findViewById(R.id.start_page);
         txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-        //underlining search page texview
-        TextView txt2 = (TextView) findViewById(R.id.Search);
-        txt2.setPaintFlags(txt2.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
 
     }
 
@@ -82,13 +80,6 @@ public class icsd_page extends ActionBarActivity
     {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.icsd.aegean.gr/"));
         startActivity(browserIntent);
-    }
-
-    public void searchPageClick(View v)
-    {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-        startActivity(browserIntent);
-
     }
 
     public void MscClick(View v)

@@ -13,24 +13,54 @@
         android:scaleType="centerCrop"
         android:src="@drawable/main_image"></ImageView>
 
-    <TextView
-        android:id="@+id/textView2"
+<!--
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:visibility="visible"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        />
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/layout1">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/application_icon"
+            android:clickable="true"
+            android:onClick="imageOnClick"/>
+    </RelativeLayout>
+-->
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:id="@+id/button3"
+            android:background="@drawable/round_btn"
+            android:onClick="mapsClick"
+            android:alpha="0.5"
+
+            android:textColor="#000000"
+            android:textStyle="bold"/>
     <Button
         android:id="@+id/b1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:alpha="0.6"
         android:fontFamily="serif"
 
@@ -41,13 +71,9 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:alpha="0.6"
-
         android:onClick="saxmOnClick"
         android:text="@string/button2"
         android:textColor="#000000"
@@ -56,12 +82,8 @@
     <Button
         android:id="@+id/button"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/SitisiBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_height="match_parent"
         android:alpha="0.6"
-
         android:onClick="mathOnClick"
         android:text="@string/button3"
         android:textColor="#000000"
@@ -69,55 +91,13 @@
 
     <Button
         android:id="@+id/SitisiBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
         android:alpha="0.6"
-
         android:onClick="sitisiOnClick"
         android:text="@string/sitisi"
         android:textColor="#000000"
         android:textStyle="bold" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/b1"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp"
-
-        android:layout_centerInParent="true">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/logo"
-            android:clickable="true"
-            android:onClick="imageOnClick"/>
-    </RelativeLayout>
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Map"
-        android:id="@+id/button3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/b1"
-        android:background="@drawable/round_btn"
-        android:onClick="mapsClick"
-        android:alpha="0.5"
-
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-
+    </LinearLayout>
 </RelativeLayout>

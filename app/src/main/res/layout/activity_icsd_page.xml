@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     android:screenOrientation="portrait"
     tools:context="com.aegeanapp.george.test_aegean_app.icsd_page">
+
    <ImageView
        android:id="@+id/iv_background"
        android:layout_width="match_parent"
@@ -10,6 +11,7 @@
        android:adjustViewBounds="true"
        android:scaleType="centerCrop"
        android:src="@drawable/icsd_image"></ImageView>
+
     <TextView
         android:text="@string/Text_ICSD"
         android:layout_width="wrap_content"
@@ -17,143 +19,99 @@
         android:id="@+id/textView"
         android:textStyle="bold"/>
 
-
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mεταπτυχιακό"
-        android:id="@+id/PostGradBtn"
-        android:layout_above="@+id/schedule"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/Search"
-        android:layout_alignEnd="@+id/Search"
-        android:onClick="MscClick"
-        android:alpha="0.7"
+        android:text="Αρχική Σελίδα Τμήματος"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/layout1"
+        android:id="@+id/start_page"
+        android:onClick="startPageClick"
+        android:clickable="true"
+        android:textStyle="bold"/>
 
+<LinearLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="20dp"
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="e-Class"
+        android:id="@+id/eclassBtn"
+        android:onClick="eclassClick"
+        android:alpha="0.7"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="e-Mail"
+        android:id="@+id/mailBtn"
+        android:onClick="mailClick"
+        android:alpha="0.7"
         android:textColor="#000000"
         android:textStyle="bold"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Academic Calendar"
-        android:id="@+id/saxm_calendar"
-        android:layout_above="@+id/PostGradBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/PostGradBtn"
-        android:layout_alignEnd="@+id/PostGradBtn"
+        android:text="Icarus"
+        android:id="@+id/IcarusBtn"
+        android:onClick="icarusClick"
         android:alpha="0.7"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eudoxus"
+        android:id="@+id/EudoxusBtn"
+        android:onClick="eudoxusClick"
+        android:alpha="0.7"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ακαδημαϊκό Ημερολόγιο"
+        android:id="@+id/saxm_calendar"
+        android:alpha="0.7"
         android:textColor="#000000"
         android:textStyle="bold"
         android:onClick="CalClick"
         android:nestedScrollingEnabled="false" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Eudoxus"
-        android:id="@+id/EudoxusBtn"
-        android:layout_above="@+id/saxm_calendar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/saxm_calendar"
-        android:layout_alignEnd="@+id/saxm_calendar"
-        android:onClick="eudoxusClick"
-        android:alpha="0.7"
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mεταπτυχιακό"
+        android:id="@+id/PostGradBtn"
+        android:onClick="MscClick"
+        android:alpha="0.7"
         android:textColor="#000000"
         android:textStyle="bold"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Icarus"
-        android:id="@+id/IcarusBtn"
-        android:onClick="icarusClick"
-        android:layout_above="@+id/EudoxusBtn"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:alpha="0.7"
-
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="e-Mail"
-        android:id="@+id/mailBtn"
-        android:layout_above="@+id/IcarusBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/IcarusBtn"
-        android:layout_alignEnd="@+id/IcarusBtn"
-        android:onClick="mailClick"
-        android:alpha="0.7"
-
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="e-Class"
-        android:id="@+id/eclassBtn"
-        android:layout_above="@+id/mailBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/mailBtn"
-        android:layout_alignEnd="@+id/mailBtn"
-        android:onClick="eclassClick"
-        android:alpha="0.7"
-
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/strPage"
-        android:id="@+id/start_page"
-        android:onClick="startPageClick"
-        android:clickable="true"
-        android:layout_above="@+id/eclassBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="41dp"
-        android:textStyle="bold"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/srchPage"
-        android:id="@+id/Search"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="searchPageClick"
-        android:clickable="true"
-        android:nestedScrollingEnabled="true"
-        android:layout_alignTop="@+id/start_page" />
-
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/schedl"
         android:id="@+id/schedule"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/PostGradBtn"
-        android:layout_alignEnd="@+id/PostGradBtn"
         android:onClick="scheduleClick"
         android:alpha="0.7"
-
         android:textColor="#000000"
         android:textStyle="bold"/>
+
+</LinearLayout>
+
 </RelativeLayout>

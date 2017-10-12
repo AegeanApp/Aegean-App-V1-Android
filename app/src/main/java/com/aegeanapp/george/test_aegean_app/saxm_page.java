@@ -25,9 +25,7 @@ public class saxm_page extends AppCompatActivity {
         //underlining startp page texview
         TextView txt= (TextView)findViewById(R.id.start_page);
         txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-        //underlining search page texview
-        TextView txt2= (TextView)findViewById(R.id.Search);
-        txt2.setPaintFlags(txt2.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
     }
     private void copyFile(InputStream in, OutputStream out) throws IOException//taken from http://stackoverflow.com/questions/12889608/how-to-open-pdf-file-in-android-from-the-assets-folder?lq=1
     {
