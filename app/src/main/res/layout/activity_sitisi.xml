@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/sitisi_image">
+        android:alpha="0.7"
+        android:src="@drawable/main_img4">
     </ImageView>
 
     <TextView
@@ -24,10 +25,13 @@
         android:layout_marginBottom="-40dp"
         android:layout_marginLeft="5dp"
         android:clickable="true"
+        android:textColor="#000000"
+        android:alpha="0.7"
         android:onClick="foodVisitHistory"
         android:text="@string/foodVisit"
         android:textStyle="bold"
         tools:onClick="foodVisitHistory" />
+
     <TextView
         android:id="@+id/freeFoodCheck_page"
         android:layout_width="wrap_content"
@@ -38,6 +42,8 @@
         android:layout_marginBottom="-40dp"
         android:layout_marginRight="5dp"
         android:clickable="true"
+        android:textColor="#000000"
+        android:alpha="0.7"
         android:onClick="freeFoodCheck"
         android:text="@string/foodCheck"
         android:textStyle="bold" />

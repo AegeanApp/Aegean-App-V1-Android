@@ -11,12 +11,15 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/pythagoras"></ImageView>
+        android:alpha="0.7"
+        android:src="@drawable/main_img5"/>
     <TextView
         android:text="@string/Text_ICSD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
+        android:textColor="#000000"
+        android:alpha="0.7"
         android:textStyle="bold"/>
 
     <TextView
@@ -26,6 +29,8 @@
         android:gravity="center_horizontal"
         android:layout_above="@+id/layout1"
         android:id="@+id/start_page"
+        android:textColor="#000000"
+        android:alpha="0.7"
         android:onClick="startPageClick"
         android:clickable="true"
         android:textStyle="bold"/>
