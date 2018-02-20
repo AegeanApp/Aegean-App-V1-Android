@@ -103,7 +103,7 @@ public class icsd_page extends ActionBarActivity
         startActivity(browserIntent);
         */
 
-        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/799129278.pdf"));
+        Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.icsd.aegean.gr/website_files/grammateia_files/announcements/3943535.pdf"));
         startActivity(i);
 
     }

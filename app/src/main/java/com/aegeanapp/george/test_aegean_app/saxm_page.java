@@ -84,7 +84,7 @@ public class saxm_page extends AppCompatActivity {
 
     public void scheduleClick(View v)
     {
-        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.math.aegean.gr/images/articles/announcements/2017-2018/orologio%20programma_fall%20semester_saxm.pdf"));//here must be the link that host the pdf(pdf archive?)
+        Intent i=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.math.aegean.gr/images/articles/announcements/2017-2018/orologio%20programma_spring%20semester_actuar.pdf"));//here must be the link that host the pdf(pdf archive?)
       //  i.setType("application/pdf");
         startActivity(i);
     }
